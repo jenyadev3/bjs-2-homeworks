@@ -9,7 +9,6 @@ class AlarmClock {
       throw new Error("Отсутствуют обязательные аргументы");
     } else if (this.alarmCollection.some(item => item.time === time)) {
       console.warn("Уже присутствует звонок на это же время");
-      return;
     }
 
     let alarm = {
@@ -59,5 +58,4 @@ class AlarmClock {
     this.stop();
     this.alarmCollection = [];
   }
-
 }

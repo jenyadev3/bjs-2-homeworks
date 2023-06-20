@@ -45,7 +45,7 @@ function debounceDecoratorNew(func, delay) {
     if (!isFirstCall) {
       func(...args); 
       wrapper.count++;
-      isFirstCall = true; // Устанавливается значение isTrottled в true, чтобы указать, что функция была вызвана и требуется задержка перед следующим вызовом.
+      isFirstCall = true; // Устанавливается значение isFirstCall в true, чтобы указать, что функция была вызвана и требуется задержка перед следующим вызовом.
     }
       wrapper.allCount++; //  увеличивает счетчик, кот. отслеживает общее количество вызовов декоратора.
     }
